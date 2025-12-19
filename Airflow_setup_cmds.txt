@@ -1,0 +1,15 @@
+python -m venv airflow_venv
+
+.\airflow_env\Scripts\Activate.ps1
+
+pip install apache-airflow==2.5.0 #Apache Airflow requires specific versions of dependencies. Install it using the
+following command.
+
+pip install apache-airflow[postgres,celery] #If you're using specific integrations (like PostgreSQL, MySQL, etc.), you
+can install extra packages.
+
+airflow db init #Initialize the Database: Airflow uses SQLite as the default database, but you can change this to
+PostgreSQL or MySQL later. To initialize the database, run.
+
+airflow users create --username admin --firstname Aditya --lastname Patel --role Admin --email adityapatel280104@gmail.com --password adityA$853211
+#create airflow user

@@ -1,0 +1,119 @@
+In P:\programs\pycharm_projects\Intellect\IMF_DATA-MODEL_1, do:
+
+powershell
+Copy
+Edit
+rd /s /q airflow_docker
+mkdir airflow_docker
+cd airflow_docker
+mkdir dags logs plugins
+notepad .env
+Paste into .env:
+
+ini
+Copy
+Edit
+AIRFLOW_UID=50000
+✅ 3. Minimal docker-compose.yaml
+Create docker-compose.yaml inside airflow_docker and paste this:
+
+yaml
+Copy
+Edit
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 10s
+      retries: 5
+
+  airflow-webserver:
+    image: apache/airflow:2.5.0
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__EXECUTOR: SequentialExecutor
+      AIRFLOW__WEBSERVER__SECRET_KEY: mysecret
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+    ports:
+      - "8080:8080"
+    command: webserver
+
+  airflow-scheduler:
+    image: apache/airflow:2.5.0
+    depends_on:
+      - postgres
+    environment:
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+    command: scheduler
+
+volumes:
+  postgres-db-volume:
+✅ This removes Redis, Celery, Worker, Triggerer — reducing memory drastically.
+✅ Uses SequentialExecutor — ideal for local development and low memory.
+
+✅ 4. Initialize Airflow DB
+Run these:
+
+powershell
+Copy
+Edit
+docker-compose up airflow-webserver airflow-scheduler postgres --build
+In a separate terminal, run:
+
+powershell
+Copy
+Edit
+docker-compose run airflow-webserver airflow db init
+If this still shows exit 137, increase memory to 6 GB temporarily.
+
+✅ 5. Create Admin User
+powershell
+Copy
+Edit
+docker-compose run airflow-webserver airflow users create --username admin --firstname Aditya --lastname Patel --role Admin --email adityapatel280104@gmail.com --password "adityA@853211"
+✅ 6. Run the Whole System
+Finally, run all containers:
+
+powershell
+Copy
+Edit
+docker-compose up -d
+Check status:
+
+powershell
+Copy
+Edit
+docker ps
+You should see:
+
+airflow-webserver (8080)
+
+airflow-scheduler
+
+postgres
+
+✅ 7. Access Airflow UI
+Open:
+👉 http://localhost:8080
+Login using:
+
+Username: admin
+
+Password: adityA@853211

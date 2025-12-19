@@ -1,0 +1,237 @@
+Step 1: Install Docker Desktop for Windows
+Download Docker Desktop:
+
+Go to Docker's official download page and click Get Docker.
+
+Install Docker Desktop:
+
+Run the installer and follow the installation instructions.
+
+Ensure WSL 2 is enabled during the Docker installation (the installer will guide you to install WSL 2 if it’s not installed).
+
+Restart your computer after installation.
+
+Verify Docker Installation:
+
+Open PowerShell or Command Prompt and run:
+
+powershell
+Copy
+# docker --version
+You should see the version of Docker you installed.
+
+Step 2: Set Up Airflow Using Docker
+Now, we’ll set up Airflow inside a Docker container using Docker Compose, which allows you to define the services in a single file.
+
+Create a Project Directory:
+
+Choose a directory for your Airflow project (e.g., P:\programs\pycharm_projects\Intellect\airflow_docker), and create the directory:
+
+powershell
+Copy
+# mkdir P:\programs\pycharm_projects\Intellect\airflow_docker
+# cd P:\programs\pycharm_projects\Intellect\airflow_docker
+Create a docker-compose.yml file:
+
+In the airflow_docker directory, create a file named docker-compose.yml. This file will define the services for the Airflow webserver, scheduler, database, etc.
+
+Open your text editor and add the following configuration:
+
+yaml
+Copy
+version: "3.7"
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres_db:/var/lib/postgresql/data
+    networks:
+      - airflow-net
+
+  airflow-webserver:
+    image: apache/airflow:2.5.0
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    networks:
+      - airflow-net
+    command: webserver
+
+  airflow-scheduler:
+    image: apache/airflow:2.5.0
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+    depends_on:
+      - postgres
+    networks:
+      - airflow-net
+    command: scheduler
+
+volumes:
+  postgres_db:
+
+networks:
+  airflow-net:
+    driver: bridge
+This setup includes:
+
+PostgreSQL: Used as the backend database for Airflow.
+
+Airflow Webserver: Accessible on localhost:8080.
+
+Airflow Scheduler: Manages task scheduling.
+
+The network airflow-net is defined to allow communication between containers.
+
+Start the Containers with Docker Compose:
+
+In the terminal (inside the airflow_docker folder), run the following command to start all the services (Postgres, Webserver, and Scheduler):
+
+powershell
+Copy
+# docker-compose up -d
+# docker-compose up airflow-webserver airflow-scheduler postgres --build
+This command will download the necessary Docker images and start the services in the background.
+
+Step 3: Initialize Airflow
+Initialize the Database:
+
+After the containers are up and running, initialize the Airflow database:
+
+powershell
+Copy
+# docker-compose exec airflow-webserver airflow db init
+Create an Admin User:
+
+Now create the admin user for the Airflow UI by running:
+
+powershell
+Copy
+# docker-compose exec airflow-webserver airflow users create \
+  --username admin \
+  --firstname Aditya \
+  --lastname Patel \
+  --role Admin \
+  --email adityapatel280104@gmail.com \
+  --password adityA$853211
+Step 4: Access Airflow UI
+Access Airflow Web UI:
+
+Open your web browser and go to http://localhost:8080.
+
+Use the credentials:
+
+Username: admin
+
+Password: adityA$853211
+
+Step 5: Start Airflow Scheduler and Webserver
+Now, you can start both the webserver and scheduler to run Airflow continuously:
+
+Webserver:
+
+In PowerShell, run:
+
+powershell
+Copy
+# docker-compose exec airflow-webserver airflow webserver
+Scheduler:
+
+In PowerShell, run:
+
+powershell
+Copy
+# docker-compose exec airflow-scheduler airflow scheduler
+Step 6: Manage Airflow
+View Logs:
+
+You can view the logs of each container using:
+
+powershell
+Copy
+# docker-compose logs airflow-webserver
+# docker-compose logs airflow-scheduler
+Stop the Services:
+
+When you're done, you can stop the services with:
+
+powershell
+Copy
+# docker-compose down
+✅ Conclusion
+You've now set up Airflow on Docker for Windows. This setup is clean, isolated, and ensures that your Airflow environment won't conflict with the system's settings.
+Plus, Docker provides a native Linux environment, which resolves many of the common compatibility issues on Windows.
+
+Let me know how it goes! If you need further help or modifications, feel free to ask!
+
+
+
+
+
+
+
+
+
+
+
+
+
+✅ Step-by-step Cleanup Commands
+🧹 1. Stop and remove all running containers
+powershell
+Copy
+Edit
+# docker stop $(docker ps -aq)
+# docker rm $(docker ps -aq)
+🧹 2. Remove all Docker images
+powershell
+Copy
+Edit
+# docker rmi -f $(docker images -q)
+🧹 3. Remove all volumes
+powershell
+Copy
+Edit
+# docker volume prune -f
+🧹 4. Remove all networks (except default ones)
+powershell
+Copy
+Edit
+# docker network prune -f
+🧹 5. Remove all build cache
+powershell
+Copy
+Edit
+# docker builder prune -a -f
+🧼 Or do it in ONE single command:
+powershell
+Copy
+Edit
+# docker system prune -a --volumes -f
+This will:
+
+🗑️ Remove all stopped containers
+
+🗑️ Remove all unused images
+
+🗑️ Remove all volumes
+
+🗑️ Remove all networks
+
+🗑️ Remove all build cache
+
+✅ Check Docker Disk Usage After Cleanup
+powershell
+Copy
+Edit
+# docker system df

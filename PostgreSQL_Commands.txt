@@ -1,0 +1,99 @@
+CREATE DATABASE mutual_funds_db;
+
+
+\c mutual_funds;
+
+-- Table for mutual fund details
+CREATE TABLE mutual_funds (
+    fund_id SERIAL PRIMARY KEY,
+    fund_name VARCHAR(255) NOT NULL,
+    fund_category VARCHAR(100),
+    fund_type VARCHAR(50),
+    inception_date DATE,
+    amc VARCHAR(255)
+);
+
+-- Table for NAV (Net Asset Value) history
+CREATE TABLE mf_price_history (
+    nav_id SERIAL PRIMARY KEY,
+    fund_id INT REFERENCES mutual_funds(fund_id) ON DELETE CASCADE,
+    date DATE NOT NULL,
+    nav_value DECIMAL(10,4) NOT NULL,
+    UNIQUE(fund_id, date)
+);
+
+-- Table for fund managers
+CREATE TABLE fund_managers (
+    manager_id SERIAL PRIMARY KEY,
+    manager_name VARCHAR(255) NOT NULL,
+    experience_years INT
+);
+
+-- Table for linking fund managers to mutual funds (Many-to-Many)
+CREATE TABLE fund_manager_mapping (
+    fund_id INT REFERENCES mutual_funds(fund_id) ON DELETE CASCADE,
+    manager_id INT REFERENCES fund_managers(manager_id) ON DELETE CASCADE,
+    PRIMARY KEY (fund_id, manager_id)
+);
+
+-- Table for investor transactions (Optional)
+CREATE TABLE transactions (
+    transaction_id SERIAL PRIMARY KEY,
+    investor_id INT,
+    fund_id INT REFERENCES mutual_funds(fund_id) ON DELETE CASCADE,
+    transaction_type VARCHAR(10) CHECK (transaction_type IN ('BUY', 'SELL')),
+    units DECIMAL(10,4),
+    transaction_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Table for investors (Optional)
+CREATE TABLE investors (
+    investor_id SERIAL PRIMARY KEY,
+    investor_name VARCHAR(255),
+    email VARCHAR(255) UNIQUE,
+    phone VARCHAR(15)
+);
+
+CREATE TABLE mf_prices_audit (
+    scheme_code VARCHAR,
+    old_value FLOAT,
+    new_value FLOAT,
+    change_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+\dt
+
+\l list of databases in the server
+
+\d to see the table in the particular data
+
+SELECT * FROM mutual_fund_nav LIMIT 10;
+
+SELECT * FROM mutual_fund_nav LIMIT 25;
+
+TRUNCATE TABLE your_table_name;
+
+DROP TABLE funds, nav_history, transactions;
+
+SELECT grantee, privilege_type FROM information_schema.role_table_grants
+WHERE table_name = 'nav_history';
+
+GRANT ALL PRIVILEGES ON TABLE public.nav_history TO postgres;
+
+SELECT grantee, privilege_type FROM information_schema.role_table_grants WHERE table_name = 'nav_history';
+
+ALTER TABLE old_table_name RENAME TO new_table_name;
+
+ALTER TABLE table_name ADD COLUMN column_name data_type;
+
+pg_dump -U postgres -d postgres -t fund_managers -t investors -t mutual_fund_nav -t mutual_fund_nav_history -t mutual_funds -t nav_history -t transactions -F c -f backup.dump
+
+pg_restore -U postgres -d mf_analytical_db backup.dump
+pg_restore -U postgres -d mf_transactional_db backup.dump
+
+ALTER TABLE mutual_fund_nav DISABLE TRIGGER ALL;
+ALTER TABLE nav_history DISABLE TRIGGER ALL;
+
+ALTER TABLE mutual_fund_nav ENABLE TRIGGER ALL;
+ALTER TABLE nav_history ENABLE TRIGGER ALL;

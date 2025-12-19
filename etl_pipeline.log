@@ -1,0 +1,248 @@
+2025-03-08 19:26:59,096 - INFO - ETL pipeline started.
+2025-03-08 19:26:59,264 - INFO - Database schema validation passed.
+2025-03-08 19:27:00,698 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:27:00,698 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:27:00,700 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:27:00,702 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:27:00,702 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:27:00,709 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:27:03,800 - INFO - Data inserted successfully.
+2025-03-08 19:27:03,801 - INFO - Records moved to history: 0
+2025-03-08 19:27:03,801 - INFO - New records inserted into mutual_fund_nav_history: 13906
+2025-03-08 19:27:03,801 - INFO - New records inserted into mutual_fund_nav: 0
+2025-03-08 19:27:05,752 - INFO - Excel file 'mutual_fund_data_20250308_192704.xlsx' created successfully.
+2025-03-08 19:27:05,753 - INFO - ETL pipeline completed.
+2025-03-08 19:38:09,870 - INFO - ETL pipeline started.
+2025-03-08 19:38:10,092 - INFO - Database schema validation passed.
+2025-03-08 19:38:10,582 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:38:10,582 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:38:10,585 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:38:10,587 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:38:10,587 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:38:10,600 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:38:13,657 - INFO - Data inserted successfully.
+2025-03-08 19:38:13,657 - INFO - Records moved to history: 0
+2025-03-08 19:38:13,657 - INFO - New records inserted into mutual_fund_nav_history: 13906
+2025-03-08 19:38:13,657 - INFO - New records inserted into mutual_fund_nav: 0
+2025-03-08 19:38:13,984 - ERROR - Error exporting data to Excel: 'Engine' object has no attribute 'cursor'
+2025-03-08 19:38:13,984 - INFO - ETL pipeline completed.
+2025-03-08 19:39:54,384 - INFO - ETL pipeline started.
+2025-03-08 19:39:54,539 - INFO - Database schema validation passed.
+2025-03-08 19:39:55,018 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:39:55,018 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:39:55,020 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:39:55,022 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:39:55,022 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:39:55,038 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:39:58,244 - INFO - Data inserted successfully.
+2025-03-08 19:39:58,244 - INFO - Records moved to history: 0
+2025-03-08 19:39:58,244 - INFO - New records inserted into mutual_fund_nav_history: 13906
+2025-03-08 19:39:58,244 - INFO - New records inserted into mutual_fund_nav: 0
+2025-03-08 19:39:59,883 - INFO - Excel file 'mutual_fund_data_20250308_193958.xlsx' created successfully.
+2025-03-08 19:39:59,885 - INFO - ETL pipeline completed.
+2025-03-08 19:42:47,556 - INFO - ETL pipeline started.
+2025-03-08 19:42:47,745 - INFO - Database schema validation passed.
+2025-03-08 19:42:48,210 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:42:48,210 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:42:48,214 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:42:48,216 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:42:48,216 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:42:48,235 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:42:51,187 - INFO - Data inserted successfully.
+2025-03-08 19:42:51,187 - INFO - Records moved to history: 0
+2025-03-08 19:42:51,187 - INFO - New records inserted into mutual_fund_nav_history: 13906
+2025-03-08 19:42:51,187 - INFO - New records inserted into mutual_fund_nav: 0
+2025-03-08 19:42:51,224 - ERROR - Error exporting data to Excel: 'Engine' object has no attribute 'cursor'
+2025-03-08 19:42:51,224 - INFO - ETL pipeline completed.
+2025-03-08 19:43:27,477 - INFO - ETL pipeline started.
+2025-03-08 19:43:27,565 - INFO - Database schema validation passed.
+2025-03-08 19:43:27,968 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:43:27,968 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:43:27,969 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:43:27,970 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:43:27,970 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:43:27,975 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:43:31,020 - INFO - Data inserted successfully.
+2025-03-08 19:43:31,020 - INFO - Records moved to history: 0
+2025-03-08 19:43:31,021 - INFO - New records inserted into mutual_fund_nav_history: 13906
+2025-03-08 19:43:31,021 - INFO - New records inserted into mutual_fund_nav: 0
+2025-03-08 19:43:31,065 - ERROR - Error exporting data to Excel: 'Engine' object has no attribute 'cursor'
+2025-03-08 19:43:31,065 - INFO - ETL pipeline completed.
+2025-03-08 19:45:03,387 - INFO - ETL pipeline started.
+2025-03-08 19:45:03,480 - INFO - Database schema validation passed.
+2025-03-08 19:45:04,012 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:45:04,012 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:45:04,014 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:45:04,015 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:45:04,015 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:45:04,023 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:45:06,852 - INFO - Data inserted successfully.
+2025-03-08 19:45:06,852 - INFO - Records moved to history: 0
+2025-03-08 19:45:06,852 - INFO - New records inserted into mutual_fund_nav_history: 13906
+2025-03-08 19:45:06,852 - INFO - New records inserted into mutual_fund_nav: 0
+2025-03-08 19:45:07,001 - ERROR - Error exporting data to Excel: 'Connection' object has no attribute 'cursor'
+2025-03-08 19:45:07,001 - INFO - ETL pipeline completed.
+2025-03-08 19:46:14,143 - INFO - ETL pipeline started.
+2025-03-08 19:46:14,299 - INFO - Database schema validation passed.
+2025-03-08 19:46:14,641 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:46:14,641 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:46:14,642 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:46:14,643 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:46:14,643 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:46:14,653 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:46:29,640 - INFO - ETL pipeline started.
+2025-03-08 19:46:29,733 - INFO - Database schema validation passed.
+2025-03-08 19:46:30,116 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:46:30,116 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:46:30,117 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:46:30,118 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:46:30,118 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:46:30,126 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:46:33,174 - INFO - Data inserted successfully.
+2025-03-08 19:46:33,174 - INFO - Records moved to history: 0
+2025-03-08 19:46:33,174 - INFO - New records inserted into mutual_fund_nav_history: 13906
+2025-03-08 19:46:33,175 - INFO - New records inserted into mutual_fund_nav: 0
+2025-03-08 19:46:33,290 - ERROR - Error exporting data to Excel: 'Connection' object has no attribute 'cursor'
+2025-03-08 19:46:33,290 - INFO - ETL pipeline completed.
+2025-03-08 19:58:50,654 - INFO - ETL pipeline started.
+2025-03-08 19:58:50,747 - INFO - Database schema validation passed.
+2025-03-08 19:58:51,126 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:58:51,129 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:58:51,130 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:58:51,130 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:58:51,131 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:58:51,137 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-08 19:58:54,179 - INFO - Data inserted successfully.
+2025-03-08 19:58:54,179 - INFO - Records moved to history: 0
+2025-03-08 19:58:54,179 - INFO - New records inserted into mutual_fund_nav_history: 13906
+2025-03-08 19:58:54,179 - INFO - New records inserted into mutual_fund_nav: 0
+2025-03-08 19:58:54,275 - ERROR - Error exporting data to Excel: 'Connection' object has no attribute 'cursor'
+2025-03-08 19:58:54,275 - INFO - ETL pipeline completed.
+2025-03-08 20:02:05,276 - INFO - ETL pipeline started.
+2025-03-08 20:02:05,372 - INFO - Database schema validation passed.
+2025-03-08 20:02:05,826 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:02:05,826 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:02:05,827 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:02:05,828 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:02:05,828 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:02:05,838 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:02:08,958 - INFO - Data inserted successfully.
+2025-03-08 20:02:08,959 - INFO - Records moved to history: 0
+2025-03-08 20:02:08,959 - INFO - New records inserted into mutual_fund_nav_history: 13906
+2025-03-08 20:02:08,959 - INFO - New records inserted into mutual_fund_nav: 0
+2025-03-08 20:02:08,997 - ERROR - Error exporting data to Excel: 'Engine' object has no attribute 'cursor'
+2025-03-08 20:02:08,997 - INFO - ETL pipeline completed.
+2025-03-08 20:02:47,640 - INFO - ETL pipeline started.
+2025-03-08 20:02:47,743 - INFO - Database schema validation passed.
+2025-03-08 20:02:48,112 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:02:48,112 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:02:48,113 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:02:48,114 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:02:48,115 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:02:48,125 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:02:50,866 - INFO - Data inserted successfully.
+2025-03-08 20:02:50,866 - INFO - Records moved to history: 0
+2025-03-08 20:02:50,866 - INFO - New records inserted into mutual_fund_nav_history: 0
+2025-03-08 20:02:50,866 - INFO - New records inserted into mutual_fund_nav: 0
+2025-03-08 20:02:52,202 - INFO - Excel file 'mutual_fund_data_20250308_200250.xlsx' created successfully.
+2025-03-08 20:02:52,203 - INFO - ETL pipeline completed.
+2025-03-08 20:04:45,824 - INFO - ETL pipeline started.
+2025-03-08 20:04:45,954 - INFO - Database schema validation passed.
+2025-03-08 20:04:46,384 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:04:46,385 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:04:46,387 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:04:46,388 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:04:46,388 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:04:46,411 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-08 20:04:49,515 - INFO - Data inserted successfully.
+2025-03-08 20:04:49,517 - INFO - Records moved to history: 0
+2025-03-08 20:04:49,517 - INFO - New records inserted into mutual_fund_nav_history: 13906
+2025-03-08 20:04:49,517 - INFO - New records inserted into mutual_fund_nav: 0
+2025-03-08 20:04:51,284 - INFO - Excel file 'mutual_fund_data_20250308_200449.xlsx' created successfully.
+2025-03-08 20:04:51,285 - INFO - ETL pipeline completed.
+2025-03-10 11:04:58,124 - INFO - ETL pipeline started.
+2025-03-10 11:04:58,269 - INFO - Database schema validation passed.
+2025-03-10 11:04:58,712 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-10 11:04:58,712 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-10 11:04:58,714 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-10 11:04:58,714 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-10 11:04:58,715 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-10 11:04:58,722 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-10 11:05:02,055 - INFO - Data inserted successfully.
+2025-03-10 11:05:02,055 - INFO - Records moved to history: 0
+2025-03-10 11:05:02,055 - INFO - New records inserted into mutual_fund_nav_history: 237
+2025-03-10 11:05:02,056 - INFO - New records inserted into mutual_fund_nav: 0
+2025-03-10 11:05:04,023 - INFO - Excel file 'mutual_fund_data_20250310_110502.xlsx' created successfully.
+2025-03-10 11:05:04,023 - INFO - ETL pipeline completed.
+2025-03-18 20:12:34,664 - INFO - ETL pipeline started.
+2025-03-18 20:12:34,772 - ERROR - Database schema validation failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-03-18 20:12:35,182 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:12:35,182 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:12:35,183 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:12:35,185 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:12:35,185 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:12:35,195 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:12:35,452 - ERROR - Database error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-03-18 20:12:35,452 - INFO - ETL pipeline completed.
+2025-03-18 20:12:57,618 - INFO - ETL pipeline started.
+2025-03-18 20:12:57,944 - ERROR - Database schema validation failed: Table mutual_fund_nav not found in mf_transactional_db.
+2025-03-18 20:12:58,291 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:12:58,291 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:12:58,292 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:12:58,293 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:12:58,293 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:12:58,303 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:12:58,521 - ERROR - Database error: relation "mutual_fund_nav_history" does not exist
+LINE 2:                 INSERT INTO mutual_fund_nav_history (scheme_...
+                                    ^
+
+2025-03-18 20:12:58,521 - INFO - ETL pipeline completed.
+2025-03-18 20:15:41,949 - INFO - ETL pipeline started.
+2025-03-18 20:15:42,137 - INFO - Database schema validation passed.
+2025-03-18 20:15:42,884 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:15:42,884 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:15:42,885 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:15:42,887 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:15:42,887 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:15:42,895 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:15:45,939 - INFO - New records inserted into mf_analytical_db: 13931
+2025-03-18 20:15:45,939 - INFO - New records inserted into mf_transactional_db: 2052
+2025-03-18 20:15:45,939 - INFO - ETL pipeline completed.
+2025-03-18 20:38:22,911 - INFO - ETL pipeline started.
+2025-03-18 20:38:22,988 - ERROR - Database schema validation failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-03-18 20:38:24,637 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:38:24,637 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:38:24,639 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:38:24,640 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:38:24,641 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:38:24,653 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:38:24,764 - ERROR - Database error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-03-18 20:38:24,764 - INFO - ETL pipeline completed.
+2025-03-18 20:38:45,699 - INFO - ETL pipeline started.
+2025-03-18 20:38:45,898 - INFO - Database schema validation passed.
+2025-03-18 20:38:46,552 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:38:46,553 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:38:46,554 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:38:46,556 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:38:46,556 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:38:46,574 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:38:49,925 - INFO - New records inserted into mf_analytical_db: 13931
+2025-03-18 20:38:49,926 - INFO - New records inserted into mf_transactional_db: 2052
+2025-03-18 20:38:51,614 - INFO - Excel file 'C:\Users\Aditya Patel\OneDrive\EXTRAS\Intellect\mutual_fund_data.xlsx' created successfully.
+2025-03-18 20:38:51,616 - INFO - ETL pipeline completed.
+2025-03-18 20:43:17,366 - INFO - ETL pipeline started.
+2025-03-18 20:43:17,581 - INFO - Database schema validation passed.
+2025-03-18 20:43:19,079 - WARNING - Error parsing line: 102061;INF200K01AB4;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 1 Yr) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:43:19,079 - WARNING - Error parsing line: 101933;INF200K01AE8;-;SBI MAGNUM GILT FUND -  GROWTH - PF (Fixed Period - 2 Yrs) Option;N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:43:19,080 - WARNING - Error parsing line: 105278;INF200K01LV9;INF200K01LW7;SBI Liquid Fund - Institutional Weekly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;09-Aug-2019. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:43:19,082 - WARNING - Error parsing line: 106224;INF200K01MH6;INF200K01MI4;SBI Short Horizon Debt Fund - Ultra Short Term Fund - Institutional Plan - Monthly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:43:19,082 - WARNING - Error parsing line: 106223;INF200K01ME3;INF200K01MF0;SBI Short Horizon Debt Fund -Ultra Short Term Fund - Institutional Plan - Fortnightly Income Distribution cum Capital Withdrawal Option (IDCW);N.A.;04-Sep-2017. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:43:19,092 - WARNING - Error parsing line: 102507;-;-;OLD-SBI Magnum Income Fund - F R P - Long Term - Inst. (G);N.A.;05-Jun-2015. Error: could not convert string to float: 'N.A.'
+2025-03-18 20:43:23,354 - INFO - New records inserted into mf_analytical_db: 13931
+2025-03-18 20:43:23,354 - INFO - New records inserted into mf_transactional_db: 2052
+2025-03-18 20:43:25,094 - INFO - Excel file 'C:\Users\Aditya Patel\OneDrive\EXTRAS\Intellect\mutual_fund_data.xlsx' created successfully.
+2025-03-18 20:43:25,096 - INFO - ETL pipeline completed.
